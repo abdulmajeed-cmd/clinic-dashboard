@@ -20,3 +20,44 @@ A client-side CRUD admin dashboard for managing patient medical records at a cli
 - jQuery
 
 ## Project Structure
+
+    src/
+    ├── App.jsx              # Main layout, state, and CRUD logic
+    ├── App.css / styles.css # Custom styles and responsive rules
+    └── components/
+        ├── Navbar.jsx       # Top navigation bar
+        ├── Sidebar.jsx      # Desktop sidebar and mobile slide-out menu
+        ├── Table.jsx        # Patient table with Edit and Delete actions
+        └── FormModal.jsx    # Add and edit patient form
+
+## How to Run
+
+1. Install Node.js (v26.13.0 LTS or newer, with npm included) from https://nodejs.org/
+2. Clone the repository:
+
+        git clone https://github.com/abdulmajeed-cmd/clinic-dashboard.git
+        cd clinic-dashboard
+
+3. Install the dependencies:
+
+        npm install
+
+4. Start the development server:
+
+        npm run dev
+
+5. Open http://localhost:5173/ in your browser.
+
+## Screenshots
+
+**Desktop**
+
+![Desktop view](screenshots/desktop.png)
+
+**Mobile**
+
+![Mobile view](screenshots/mobile.png)
+
+## Notes
+
+- The Visit Schedule, Reports, and Settings menu items are placeholders for future development.
