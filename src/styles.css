@@ -1,0 +1,31 @@
+/* Page background */
+body {
+  background-color: #f4f6fb;
+}
+
+/* Sidebar width (Bootstrap uses this variable for offcanvas panels) */
+.app-sidebar {
+  --bs-offcanvas-width: 240px;
+}
+
+/* Smooth hover effects on buttons, links, and cards */
+.btn,
+.sidebar-link,
+.card {
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.sidebar-link:hover {
+  transform: translateX(4px);
+}
+
+/* On small screens, make the table text smaller so it fits better */
+@media (max-width: 767.98px) {
+  .table-responsive {
+    font-size: 0.85rem;
+  }
+}
